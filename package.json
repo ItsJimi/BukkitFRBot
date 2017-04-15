@@ -1,0 +1,23 @@
+{
+  "name": "bukkitfrbot",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "./app/index.js",
+  "scripts": {
+    "dev": "nodemon ./app/index.js",
+    "start": "NODE_ENV=production node ./app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsJimi/BukkitFRBot.git"
+  },
+  "author": "Jimi M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ItsJimi/BukkitFRBot/issues"
+  },
+  "homepage": "https://github.com/ItsJimi/BukkitFRBot#readme",
+  "dependencies": {
+    "discord.js": "^11.0.0"
+  }
+}
