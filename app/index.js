@@ -10,7 +10,8 @@ client.on('ready', () => {
 })
 
 client.on('guildMemberAdd', guildMember => {
-  guildMember.guild.defaultChannel.sendMessage(`Bonjour <@${message.author.id}> !\n${file.toString()}`)
+  guildMember.guild.channels.get(config.channelId).sendMessage(`Bonjour <@${guildMember.user.id}> !\n${file.toString()}`)
+  .catch(err => console.log(err))
 })
 
 client.login(config.token)
